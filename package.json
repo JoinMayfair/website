@@ -18,7 +18,6 @@
       "dev": "astro dev",
       "start": "astro dev",
       "build": "astro build",
-      "preview": "astro preview",
       "check": "astro build && tsc && wrangler deploy --dry-run",
       "deploy": "astro build && wrangler deploy",
       "preview": "astro build && wrangler dev",
