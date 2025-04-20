@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import FAQ from '../components/FAQ.astro';
+import CTASection from '../components/CTASection.astro';
+import Footer from '../components/Footer.astro';
+import Testimonial from '../components/Testimonial.astro';
+---
+
+<Layout title="Mayfair - A Community for Engineering Leaders">
+  <Navbar />
+  <Hero />
+
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-accent">About Mayfair</h2>
+        <p class="mt-4 max-w-2xl mx-auto text-base text-gray-300">Mayfair is an exclusive community for engineering leaders to connect, share insights, and grow together.</p>
+      </div>
+      <div class="mt-10 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+       <div class="relative">
+  <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-accent text-british-racing-green">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+    </svg>
+  </div>
+  <div class="ml-16">
+    <h3 class="text-lg font-medium text-white">Vetted Community</h3>
+    <p class="mt-2 text-base text-gray-300">Connect with a handpicked group of engineering leaders who have been carefully vetted to ensure meaningful interactions.</p>
+  </div>
+</div>
+
+<div class="relative">
+  <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-accent text-british-racing-green">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+  </div>
+  <div class="ml-16">
+    <h3 class="text-lg font-medium text-white">Exclusive Events</h3>
+    <p class="mt-2 text-base text-gray-300">Participate in members-only events, workshops, and roundtables focused on engineering leadership challenges.</p>
+  </div>
+</div>
+
+<div class="relative">
+  <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-accent text-british-racing-green">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+    </svg>
+  </div>
+  <div class="ml-16">
+    <h3 class="text-lg font-medium text-white">Knowledge Sharing</h3>
+    <p class="mt-2 text-base text-gray-300">Access a wealth of resources, case studies, and best practices from top engineering leaders across industries.</p>
+  </div>
+</div>
+
+<div class="relative">
+  <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-accent text-british-racing-green">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a2.5 2.5 0 015 0v6a2.5 2.5 0 01-5 0zm-3.5-.75a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75v-4.5a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v4.5zm9.75 0a.75.75 0 01-.75.75h-1.5a.75.75 0 01-.75-.75v-4.5a.75.75 0 01.75-.75h1.5a.75.75 0 01.75.75v4.5zM17 11l2-2v3" />
+    </svg>
+  </div>
+  <div class="ml-16">
+    <h3 class="text-lg font-medium text-white">Mentorship</h3>
+    <p class="mt-2 text-base text-gray-300">Develop meaningful relationships with peers and mentors who can help you navigate the challenges of engineering leadership.</p>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+<!--
+    <section id="benefits" class="py-16 bg-british-racing-green border-t border-emerald-800">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold text-white">Why Join Mayfair?</h2>
+        <p class="mt-4 max-w-2xl mx-auto text-gray-300">Our community offers unique benefits to help you grow as an engineering leader.</p>
+        </div>
+        <div class="max-w-4xl mx-auto">
+        <Testimonial
+            quote="Being part of this community has transformed how I approach engineering leadership. The connections and insights are invaluable."
+            author="Engineering Director"
+            role="AI Technology Company"
+        />
+        <Testimonial
+            quote="The private events and discussions have helped me solve critical challenges in scaling my engineering team that I couldn't find solutions for elsewhere."
+            author="CTO"
+            role="Health Tech Startup"
+        />
+        <Testimonial
+            quote="The level of discourse and expertise in this group is exceptional. It's become my go-to resource for navigating complex leadership situations."
+            author="VP of Engineering"
+            role="Enterprise SaaS Company"
+        />
+        </div>
+    </div>
+    </section>
+-->
+  <FAQ />
+  <CTASection />
+  <Footer />
+</Layout>

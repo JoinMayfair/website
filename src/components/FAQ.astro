@@ -1,0 +1,29 @@
+---
+const faqs = [
+  {
+    question: "Who can join Mayfair?",
+    answer: "Mayfair is exclusively for CTOs, VPEs, Directors of Software Engineering, and Software Engineering Managers. We carefully vet all applicants to ensure a high-quality network of engineering leaders."
+  },
+  {
+    question: "What benefits do members receive?",
+    answer: "Members gain access to exclusive events, peer discussions, mentorship opportunities, resources, and a community of like-minded engineering leaders facing similar challenges."
+  },
+  {
+    question: "How does the application process work?",
+    answer: "After you submit your application, our team will review your information. If you meet our criteria, we'll schedule a brief conversation to learn more about you and your goals."
+  }
+];
+---
+<section id="faq" class="py-16 bg-british-racing-green border-t border-emerald-800">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-extrabold text-accent text-center mb-12">Frequently Asked Questions</h2>
+<div class="max-w-3xl mx-auto">
+  {faqs.map(faq => (
+    <div class="mb-8">
+      <h3 class="text-xl font-bold mb-2 text-accent">{faq.question}</h3>
+      <p class="text-gray-300">{faq.answer}</p>
+    </div>
+  ))}
+</div>
+  </div>
+</section>
